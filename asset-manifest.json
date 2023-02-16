@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bejamas/static/css/main.eda92fac.css",
+    "main.js": "/bejamas/static/js/main.0b5e26ae.js",
+    "index.html": "/bejamas/index.html",
+    "main.eda92fac.css.map": "/bejamas/static/css/main.eda92fac.css.map",
+    "main.0b5e26ae.js.map": "/bejamas/static/js/main.0b5e26ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eda92fac.css",
+    "static/js/main.0b5e26ae.js"
+  ]
+}
