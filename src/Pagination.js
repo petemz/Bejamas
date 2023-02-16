@@ -12,9 +12,9 @@ function Pagination (props)  {
       <ul className='pagination'>
         {pageNumbers.map(number => (
           <li key={number} className='page-item'>
-            <a onClick={() => props.paginate(number)} className='page-link'>
+            <span onClick={() => props.paginate(number)} className='page-link'>
               {number}
-            </a>
+            </span>
           </li>
         ))}
       </ul>
