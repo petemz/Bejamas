@@ -1,0 +1,281 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header .shopping-cart-cntnr {
+    position: relative;
+    margin-right: 5px;
+}
+
+header .shopping-cart-cntnr img {
+    width: 50px;
+}
+
+header .shopping-cart-cntnr .shopping-cart-disp {
+    background-color: rgb(255, 155, 155);
+    position: absolute;
+    border: 2px solid aqua;
+    padding: 10px;
+    width: 200px;  
+    max-height: 400px;
+    overflow: scroll;
+    right: 5px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopping-cart-disp button {
+    width: 100px;
+    height: 30px;
+}
+
+.shopping-cart-item {
+    background-color: antiquewhite;
+    margin: 10px auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopping-cart-item img {
+    width: 500px;
+}
+
+.shopping-cart-item * {
+    margin: 0;
+}
+
+.shopping-cart-cntnr .shopping-cart-size{
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-weight: 500;
+    line-height: 16px;
+    font-size: 19px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -11px;
+    bottom: -11px;
+
+}
+
+hr {
+    border: none;
+    height: 5px;
+    background-color: #e4e4e4;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.potd-container {
+    position: relative;
+    padding: 0px;
+}
+
+.ft-photo img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.potd-container .tag {
+    float: left;
+    position: absolute;
+    left: 0px;
+    /* exceeding expected end*/
+    bottom: 4px;
+    z-index: 1000;
+    background-color: orangered;
+    border-radius: 0px 50px 0px 0px;
+    padding: 10px;
+    padding-right: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.ft-photo .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ft-photo .top p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ft-photo .top button {
+    width: 110px;
+    height: 30px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+}
+
+.ft-desc {
+    display: flex
+}
+
+.ft-desc p, .ft-desc h3 {
+    margin: 0;
+}
+
+.side-buy {
+    margin-left: 200px;
+    text-align: right;
+}
+
+.side-buy .related-buys {
+    display: flex;
+}
+
+.side-buy .related-buys img {
+    max-width: 100px;
+    margin: 10px;
+}
+
+.shop {
+    width: 100%;
+}
+
+.main-shop {
+    padding: 0px 50px;
+    width: calc(100% - 200px);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 275px);
+    column-gap: 75px;
+    row-gap: 35px;
+}
+
+.item {
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0px 0px 10px #c7c6c6;
+}
+
+.item-header {
+    position: relative;
+    width: 270px;
+}
+
+.item-header .item-img {
+    width: 270px;
+}
+
+.item-header .add-cart {
+    display: block;
+    position: absolute;
+    border: none;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: inherit;
+    height: 50px;
+}
+
+.item-footer *{
+    margin: 0px;
+    
+} 
+
+.item-footer {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #656565;
+}
+
+.item-category {
+    font-weight: bold;
+}
+
+.item-footer .item-name {
+    font-size: 23px;
+    margin: 4px 0px;
+    color: black;
+}
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+.shop-items {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.shop .bestseller {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    background-color: #656565;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 13.5px;
+    font-weight: 600;
+    top: 17px;
+    left: 0;
+}
+
+.sidebar .checkers {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidebar .checkers input {
+    margin-right: 13px;
+    color: black;
+}
+
+.sidebar .top-filter p, .sidebar .bottom-filter p {
+    margin: 0;
+    margin-bottom: 25px;
+
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination li {
+    margin: 5px;
+    list-style: none;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort-icon {
+    display: flex;
+    align-items: center;
+}
+
+.sort-icon select{
+    width: min-content;
+    height: 30px;
+    font-size: 16px;
+    background-color: unset;
+    border: none;
+    margin-left: 13px;
+}
