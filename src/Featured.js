@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 function Featured(props) {
+    console.log(props)
 
     const [cart, setCart] = useState([])
     
@@ -16,14 +17,16 @@ function Featured(props) {
         <section >
             <div className='ft-photo'>
                 <div className='top'>
-                    <p>{props.info.name}</p>
+                    <p>{props.info.name.toUpperCase()}</p>
                     <button onClick={handleClick}>ADD TO CART</button>
                 </div>
 
-                <div className='potd-container'>
-                    <img src="https://images.pexels.com/photos/3631659/pexels-photo-3631659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-                    <div className='tag'>
-                        <span>Photo of the day</span>
+                <div className="potd-container">
+                    <div className='potd-container-ov'>
+                        <img src="https://images.pexels.com/photos/3631659/pexels-photo-3631659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+                        <div className='tag'>
+                            <span>Photo of the day</span>
+                        </div>
                     </div>
                 </div>
             </div>

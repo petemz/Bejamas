@@ -8,16 +8,14 @@ function Pagination (props)  {
   }
 
   return (
-    <nav>
-      <ul className='pagination'>
+    <nav className='paginate'>
         {pageNumbers.map(number => (
-          <li key={number} className='page-item'>
+          <div key={number} className='page-item'>
             <span onClick={() => props.paginate(number)} className='page-link'>
               {number}
             </span>
-          </li>
+          </div>
         ))}
-      </ul>
     </nav>
   );
 };

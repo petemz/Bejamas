@@ -1,8 +1,12 @@
+body {
+    padding-bottom: 50px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 60px;
 }
 
 header .shopping-cart-cntnr {
@@ -11,11 +15,11 @@ header .shopping-cart-cntnr {
 }
 
 header .shopping-cart-cntnr img {
-    width: 50px;
+    width: 40px;
 }
 
 header .shopping-cart-cntnr .shopping-cart-disp {
-    background-color: rgb(255, 155, 155);
+    background-color: white;
     position: absolute;
     border: 2px solid aqua;
     padding: 10px;
@@ -35,7 +39,7 @@ header .shopping-cart-cntnr .shopping-cart-disp {
 }
 
 .shopping-cart-item {
-    background-color: antiquewhite;
+    background-color: rgb(238, 238, 238);
     margin: 10px auto;
     width: 200px;
     display: flex;
@@ -77,12 +81,19 @@ hr {
 }
 
 .potd-container {
+    display: flex;
+    justify-content: center;
+}
+
+.potd-container-ov {
     position: relative;
-    padding: 0px;
+    width: fit-content;
 }
 
 .ft-photo img {
     width: 100%;
+    max-height: 530px;
+    max-width: 800px;
     margin: 0px;
     padding: 0px;
 }
@@ -148,14 +159,24 @@ hr {
     width: 100%;
 }
 
+.shopper {
+    width: calc(100% - 200px);
+}
+
 .main-shop {
     padding: 0px 50px;
-    width: calc(100% - 200px);
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 275px);
     column-gap: 75px;
     row-gap: 35px;
+}
+
+.page-control {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .item {
@@ -249,16 +270,38 @@ hr {
 .sidebar .top-filter p, .sidebar .bottom-filter p {
     margin: 0;
     margin-bottom: 25px;
-
 }
 
-.pagination {
-    display: flex;
+.sidebar .top-filter label{
+    display: block;
 }
 
-.pagination li {
+.page-control  {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.page-control button {
+    background-color: black;
+    color: white;
+    margin: auto 0.5px;
+    border: none;
+    border-radius: 6px;
+    width: 25px;
+    height: 25px;
+}
+
+.page-item {
     margin: 5px;
-    list-style: none;
+    padding: 1px 6px;
+    box-shadow: 0px 0px 10px #c7c6c6;
+}
+
+.page-item:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .sort {
@@ -279,3 +322,6 @@ hr {
     border: none;
     margin-left: 13px;
 }
+
+
+

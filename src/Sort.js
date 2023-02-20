@@ -1,12 +1,17 @@
-import React from 'react'
-import Item from './Item'
+import React, { useState, useEffect } from 'react';
 
-const Fruits = ({fruits}) => {
-    const items = renderedProducts.map(product => {
-        return (
-            <Item key={product.name} updateCart={props.updateCart}  info={product} />
-        )
-    })
-}
+function CheckboxFilter({ filters }) {
+    return (
+      <div className='top-filter'>
+        {filters.map(filter => (
+          <label key={filter}>
+            <input type="checkbox" value={filter} />
+            {filter}
+          </label>
+        ))}
+      </div>
+    );
+  }
+  
 
-export default Fruits
+export default CheckboxFilter

@@ -6,7 +6,7 @@ function Cart(props) {
                     <p className="item-name">{item.name}</p>
                     <p>{item.price}</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1676208994587-e8cce8951987?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1400&q=60" alt=""/>
+                <img src={item.image.src} alt={item.image.alt}/>
             </div>
         )
     })
