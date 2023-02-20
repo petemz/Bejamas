@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bejamas/static/css/main.eda92fac.css",
-    "main.js": "/bejamas/static/js/main.53731ef6.js",
+    "main.css": "/bejamas/static/css/main.4f79ba1e.css",
+    "main.js": "/bejamas/static/js/main.fb383d54.js",
     "index.html": "/bejamas/index.html",
-    "main.eda92fac.css.map": "/bejamas/static/css/main.eda92fac.css.map",
-    "main.53731ef6.js.map": "/bejamas/static/js/main.53731ef6.js.map"
+    "main.4f79ba1e.css.map": "/bejamas/static/css/main.4f79ba1e.css.map",
+    "main.fb383d54.js.map": "/bejamas/static/js/main.fb383d54.js.map"
   },
   "entrypoints": [
-    "static/css/main.eda92fac.css",
-    "static/js/main.53731ef6.js"
+    "static/css/main.4f79ba1e.css",
+    "static/js/main.fb383d54.js"
   ]
 }
