@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-
 function CheckboxFilter({ filters }) {
     return (
       <div className='top-filter'>
