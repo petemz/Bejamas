@@ -146,6 +146,10 @@ hr {
     text-align: right;
 }
 
+@media (max-width: 1250px) {
+    margin-left:50px;   
+}
+
 .side-buy .related-buys {
     display: flex;
 }
