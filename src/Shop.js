@@ -3,7 +3,7 @@ import Page from './Page'
 import CheckboxFilter from "./Sort"
 
 function Shop(props) {
-    const [products, setProducts] = useState(props.products)
+    const products = useState(props.products)
 
     const [renderedProducts, setRenderedProducts] = useState(products)
     useEffect(() => {
